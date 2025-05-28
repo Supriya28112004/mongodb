@@ -1,5 +1,6 @@
 use todo
-switched to db todo
+switched to db todo   
+
  
 db.todos.insertMany([
   {
@@ -9,6 +10,8 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-01"),
     priority: "high"
   },
+
+  
   {
     title: "Read a book",
     description: "Read 'Atomic Habits'",
@@ -16,6 +19,9 @@ db.todos.insertMany([
     dueDate: new Date("2025-05-25"),
     priority: "low"
   },
+
+
+  
   {
     title: "Pay electricity bill",
     description: "Pay before due date to avoid penalty",
@@ -23,6 +29,8 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-05"),
     priority: "medium"
   },
+
+  
   {
     title: "Finish project report",
     description: "Finalize and submit to guide",
@@ -31,6 +39,8 @@ db.todos.insertMany([
     priority: "high"
   }
 ])
+
+
 {
   acknowledged: true,
   insertedIds: {
@@ -39,6 +49,7 @@ db.todos.insertMany([
     '2': ObjectId('6836e39cf59ddb70e4428075'),
     '3': ObjectId('6836e39cf59ddb70e4428076')
   }
+  
 }
  
 db.todos.insertMany([
@@ -49,6 +60,9 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-01"),
     priority: "high"
   },
+
+
+  
   {
     title: "Read a book",
     description: "Read 'Atomic Habits'",
@@ -56,6 +70,8 @@ db.todos.insertMany([
     dueDate: new Date("2025-05-25"),
     priority: "low"
   },
+
+  
   {
     title: "Pay electricity bill",
     description: "Pay before due date to avoid penalty",
@@ -63,6 +79,8 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-05"),
     priority: "medium"
   },
+
+  
   {
     title: "Finish project report",
     description: "Finalize and submit to guide",
@@ -70,7 +88,11 @@ db.todos.insertMany([
     dueDate: new Date("2025-05-30"),
     priority: "high"
   }
+
+  
 ])
+
+
 {
   acknowledged: true,
   insertedIds: {
@@ -79,6 +101,9 @@ db.todos.insertMany([
     '2': ObjectId('6836e585f59ddb70e4428079'),
     '3': ObjectId('6836e585f59ddb70e442807a')
   }
+
+
+  
 }
 db.todos.updateMany(
   { status: "completed" },
@@ -91,6 +116,9 @@ db.todos.updateMany(
   modifiedCount: 3,
   upsertedCount: 0
 }
+
+
+
 db.todos.insertMany([
   {
     title: "Call the plumber",
@@ -99,6 +127,8 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-02"),
     priority: "medium"
   },
+
+  
   {
     title: "Schedule dentist appointment",
     description: "Annual dental check-up",
@@ -106,6 +136,9 @@ db.todos.insertMany([
     dueDate: new Date("2025-06-10"),
     priority: "low"
   },
+
+
+  
   {
     title: "Workout session",
     description: "1 hour at the gym",
